@@ -1,0 +1,274 @@
+.container {
+	width: 100%;
+
+
+}
+
+/* engadir animacion (Chrome, Safari, Opera) 
+
+@-webkit-keyframes anima {
+	from {
+		top: -100px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+*/
+
+/* engadir animation 
+
+@keyframes anima {
+	from {
+		top: -100px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}*/
+
+/* miniaturas */
+
+#table-mulleres table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: auto;
+}
+
+
+#table-mulleres table tr:nth-child(2n + 1) {
+	background-color: #fff;
+}
+
+#table-mulleres table tr {
+	padding: 0.5em;
+	border: none;
+}
+
+#table-mulleres td {
+	padding: 0.5em;
+	margin: 0px;
+	
+}
+
+.thumbnails, .thumbnails-woman {
+
+	margin: 0em;
+	padding: 0em;
+	box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+
+}
+
+.thumbnails:hover, .thumbnails-woman:hover{
+	border-radius: 0.3em;
+	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.8)
+}
+
+img.thumbnails {
+	width: 12vw;
+	height: 12vw;
+	object-fit: cover;
+	border-radius: 0.3em;
+}
+
+img.thumbnails-woman {
+	width: 6vw;
+	height: 12vw;
+	object-fit: cover;
+	border-radius: 0.3em;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+	#table-mullerestable,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 100%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	img.thumbnails {
+		width: 50vw;
+		height: 50vw;
+		object-fit: cover;
+		border-radius: 0.3em;
+	}
+}
+
+a.closebtn[title]:hover:after {
+	content: attr(title);
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 5px #333;
+	color: #000;
+	/* El tooltip por defecto estara oculto */
+	font-size: 0.7em;
+	padding: 0.3em;
+	width: auto;
+	position: absolute;
+	bottom: auto;
+	left: 95%;
+	z-index: 999999;
+	margin: auto;
+	border-radius: 0.2em;
+}
+
+.cssToolTip {
+	position: relative;
+	/* Esta clase tiene que tener posicion relativa */
+	color: #000;
+	/* Color del texto */
+}
+
+/* El tooltip */
+
+.cssToolTip span {
+	background-color: #fff;
+	border: 2px solid #fff;
+
+	box-shadow: 5px 5px 5px #333;
+	color: #000;
+	display: none;
+	/* El tooltip por defecto estara oculto */
+	font-size: 0.8em;
+	max-width: 200vw;
+	position: absolute;
+	bottom: auto;
+	left: 0px;
+	z-index: 999999;
+	line-height: 2em;
+	padding: 0.2em;
+	margin: 0 auto;
+	border-radius: 0.2em;
+}
+
+/* El tooltip cuando se muestra */
+
+.cssToolTip:hover span {
+	display: inline;
+}
+
+/* modal */
+
+.modal:target {
+	display: table;
+	position: absolute;
+}
+
+.modal {
+	width: 90vw;
+	height: auto;
+
+	display: none;
+
+	left: 7vw;
+	top: 0;
+
+	overflow: auto;
+
+	z-index: 9999999999;
+
+	padding: 1em;
+	margin: 0 auto;
+
+	background-color: rgb(243, 243, 243);
+	position: relative;
+
+	outline: 0;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	text-align: justify;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	/* engadir animation */
+	-webkit-animation-name: anima;
+	/* Chrome, Safari, Opera */
+	-webkit-animation-duration: 1s;
+	/* Chrome, Safari, Opera */
+	animation-name: anima;
+	animation-duration: 1s;
+}
+
+.modal h2 {
+	margin: 0 auto;
+	width: auto;
+	text-align: right;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h2.profesion {
+	font-size: 1em;
+	width: auto;
+	
+}
+
+.modal  img {
+	margin: 0em 2em 0em 10%;
+	position: relative;
+	width: 40vw;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal h3 {
+	margin: 0 auto;
+	font-size: 1em;
+	font-weight: bold;
+}
+.modal p {
+
+	margin: 0 auto;
+	margin: 0em 2em 0em 10%;
+
+}
+
+.container-modal {
+	width: 80vw;
+	padding: 0.7em;
+	margin: 0 auto;
+
+}
+
+.container-modal p {
+width: 60vw;
+margin-left: 5%;
+
+}
+
+
+
+/* cerrar el modal */
+
+.closebtn {
+	text-decoration: none;
+	float: right;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #007a53;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}

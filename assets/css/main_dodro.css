@@ -1,0 +1,273 @@
+@import url(fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css) @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/*
+Marrón Hex Color Code	#a2582c
+MarrónRGB Color Code	rgb(255, 204, 0)
+
+Gris  color: rgba(210, 215, 217, 0.75);
+Gray Hex Color Code #808080
+
+verde Rois Hex Color Code #007a53 007a53
+verde Rois  RGB Color Code	rgb(0,122, 83)
+
+verde Dodro Hex Color Code #A2A240 
+verde Dodro RGB Color Code rgb(162,162,64)
+
+Ocre Hex Color Code #ffcc00
+Ocre RGB Color Code	rgb(255, 204, 0)
+*/
+
+/* Table */
+
+.table-wrapper {
+	margin: 0 auto;
+	width: 60vw;
+	display: flex;
+	justify-content: left;
+	align-content: flex-start;
+	overflow: visible;
+}
+
+.table-wrapper img {
+	width: 25vw;
+	height: auto;
+	margin: 0em 0em 0em 1em;
+	box-shadow: 2px 5px 10px #888;
+	border: 2px dashed #ccc;
+	border-radius: 0.5em;
+	/*Estandar*/
+	-webkit-border-radius: 0.5em;
+	/*Safari y Chrome*/
+	-moz-border-radius: 0.5em;
+	/*Firefox*/
+	-o-border-radius: 0.5em;
+	/*Opera*/
+	-ms-border-radius: 0.5em;
+	/*IE 8*/
+	/*  border-radius: 5px 50px / 50px 15px;
+    Usando el segundo formato */
+}
+
+.table-wrapper img:hover {
+
+	/*-webkit-transform:scale(1.5);
+transform:scale(1.5);
+transition: 50%;*/
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	overflow: visible;
+	z-index: 9999999;
+	box-shadow: 5px 5px 10px #666;
+}
+
+.table-wrapper table,
+.table-wrapper p {
+	margin: inherit;
+	width: 40%;
+}
+
+.table-wrapper tr {
+	border: solid 1px rgba(210, 215, 217, 0.75);
+	border-left: 0;
+	border-right: 0;
+}
+
+.table-wrapper table tr:nth-child(2n + 1) {
+	background-color: #fff;
+}
+
+.table-wrapper table td {
+	padding: 1em;
+
+}
+
+td.tabla-verdeDodro {
+	font-size: 1em;
+	font-family: sans-serif;
+	background-color: #A2A240;
+	color: #fff;
+	font-weight: bold;
+	padding-left: .5em;
+	width: 5%;
+}
+
+.table-wrapper table th {
+	color: #3d4449;
+	font-size: 0.9em;
+	font-weight: 600;
+	padding: 0 0.75em 0.75em 0.75em;
+	text-align: left;
+}
+
+.table-wrapper table thead {
+	border-bottom: 2px solid rgba(210, 215, 217, 0.75);
+}
+
+
+.table-wrapper table tfoot {
+	border-top: 2px solid rgba(210, 215, 217, 0.75);
+}
+
+
+.table-wrapper table.alt {
+	border-collapse: separate;
+}
+
+
+.table-wrapper table.alt tr td {
+	border: 1px solid rgba(210, 215, 217, 0.75);
+	border-left-width: 0;
+	border-top-width: 0;
+}
+
+
+.table-wrapper table.alt tr td:first-child {
+	border-left-width: 1px;
+}
+
+
+.table-wrapper table.alt tbody tr:first-child td {
+	border-top-width: 1px;
+}
+
+
+.table-wrapper table.alt thead {
+	border-bottom: 0;
+}
+
+
+.table-wrapper table.alt tfoot {
+	border-top: 0;
+}
+
+.roteiros {}
+
+.roteiros div {
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-content: flex-start;
+}
+
+.roteiros p {
+	width: 50%;
+}
+
+.roteiros ul {
+	width: 25%;
+}
+
+.roteiros li .iconos {
+	width: 4em;
+	box-shadow: 2px 5px 8px #888;
+
+}
+
+.roteiros .iconos:hover {
+	-webkit-transform: none;
+	transform: none;
+	box-shadow: auto;
+}
+
+.roteiros .image_little {
+	width: 35%;
+	position: relative;
+	margin: auto;
+}
+
+.roteiros .image-varias {
+	width: 100%;
+	margin: 0.5em;
+}
+
+.roteiros .image-varias img {
+	margin: 0.5em auto;
+}
+
+.roteiros img {
+	width: 80%;
+	margin: 0;
+	padding: 0;
+	box-shadow: 2px 5px 10px #888;
+	border: 2px dashed #ccc;
+	border-radius: 0.5em;
+	/*Estandar*/
+	-webkit-border-radius: 0.5em;
+	/*Safari y Chrome*/
+	-moz-border-radius: 0.5em;
+	/*Firefox*/
+	-o-border-radius: 0.5em;
+	/*Opera*/
+	-ms-border-radius: 0.5em;
+	/*IE 8*/
+	/*  border-radius: 5px 50px / 50px 15px;
+    Usando el segundo formato */
+}
+
+.roteiros img:hover {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	box-shadow: 5px 5px 10px #666;
+}
+
+.roteiros h3 {
+	font-size: 1.3em;
+	margin: 0;
+	color: #a2a240;
+}
+
+.roteiros h2 {
+	font-size: 1.5em;
+	color: #a2a240;
+	font-family: "Roboto Slab", serif;
+}
+
+.roteiros li {
+	padding: 0.3em;
+	margin: .5em;
+}
+
+.roteiros span {
+	font-size: 1em;
+	color: #a2a240;
+	font-weight: 800;
+}
+
+.mapa-topo {
+	display: flex;
+}
+
+.mapa-topo li a {
+	color: #959508;
+	font-weight: bold;
+}
+
+.mapa-topo li a:hover {
+	color: #444;
+	font-weight: bold;
+}
+
+.mapa-topo img {
+	width: 80%;
+	height: auto;
+}
+
+/*
+#lestrobe {
+	width: 40%;
+}
+
+#lestrobe2 {
+	width: 40%;
+}
+
+#lestrobe3 {
+	width: 25%;
+}
+
+#lestrobe4 {
+	width: 25%;
+}
+*/

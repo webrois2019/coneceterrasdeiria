@@ -1,0 +1,342 @@
+/* engadir animacion (Chrome, Safari, Opera) 
+
+@-webkit-keyframes anima {
+	from {
+		top: -100px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+*/
+
+/* engadir animation 
+
+@keyframes anima {
+	from {
+		top: -100px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}*/
+
+/* miniaturas */
+
+.table_galeria {
+	width: 100%;
+}
+
+article .table_galeria2 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.table_galeria table,
+.table_galeria2 table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.table_galeria table tr:nth-child(2n + 1),
+.table_galeria2 table tr:nth-child(2n + 1) {
+	background-color: #fff;
+}
+
+.table_galeria table tr,
+.table_galeria2 table tr {
+	padding: 0.5em;
+	border: none;
+}
+
+.table_galeria td,
+.table_galeria2 td {
+	padding: 0.5em;
+	margin: 0px;
+
+}
+
+.table_galeria2 q {
+	color: #fff;
+	border: none;
+}
+
+.table_galeria2 img.thumbnails,
+.table_galeria2 td span {
+	cursor: default;
+}
+
+.thumbnails {
+	margin: 0em;
+	padding: 0em;
+	box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+
+}
+
+.thumbnails:hover {
+	border-radius: 0.3em;
+	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+h2 {
+	border-bottom: 1px solid #959508;
+}
+
+div.mapabranhas {
+	margin: 0 auto;
+	padding: 0em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.mapabranhas img {
+	width: 47%;
+	padding: inherit;
+	margin: auto;
+	border-radius: 0.3em;
+	box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+
+}
+
+.mapabranhas img:hover {
+	border-radius: 0.3em;
+	-webkit-transform: scale(1.5) translate(-5%, 0px);
+	transform: scale(1.5) translate(-5%, 0px);
+	overflow: visible;
+	z-index: 9999999;
+	background-color: #fff;
+	box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+}
+
+img.thumbnails,
+img.mapabranhas {
+	width: 8vw;
+	height: auto;
+	object-fit: cover;
+	border-radius: 0.3em;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+	.table_galeria table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 100%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	img.thumbnails {
+		width: 50vw;
+		height: 50vw;
+		object-fit: cover;
+		border-radius: 0.3em;
+	}
+}
+
+
+/* ********************************* */
+
+a.closebtn[title]:hover:after {
+	content: attr(title);
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 5px #333;
+	color: #000;
+	/* El tooltip por defecto estara oculto */
+	font-size: 0.7em;
+	padding: 0.3em;
+	width: auto;
+	position: absolute;
+	bottom: auto;
+	left: 95%;
+	z-index: 999999;
+	margin: auto;
+	border-radius: 0.2em;
+}
+
+.cssToolTip,
+.cssToolTip2 {
+	position: relative;
+	/* Esta clase tiene que tener posicion relativa */
+	color: #000;
+	/* Color del texto */
+}
+
+/* El tooltip */
+
+.cssToolTip span {
+	background-color: rgba(162, 162, 64, 0.9);
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 5px #444;
+	color: #fff;
+	display: none;
+	/* El tooltip por defecto estara oculto */
+	font-size: 0.8em;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	z-index: 999999;
+	line-height: normal;
+	padding: 0.3em;
+	margin: 0 auto;
+	border-radius: 0.2em;
+}
+
+
+.cssToolTip2 span {
+	background-color: rgba(162, 162, 64, 0.9);
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 5px #444;
+	color: #fff;
+	display: none;
+	/* El tooltip por defecto estara oculto */
+	font-size: 1em;
+	width: 15em;
+	position: absolute;
+	bottom: 0;
+	left: 1.5em;
+	z-index: 999999;
+	line-height: normal;
+	padding: 0.3em;
+	margin: 0 auto;
+	border-radius: 0.2em;
+}
+
+.cssToolTip2 q {
+	color: #fff;
+	text-align: left;
+	padding: 0em;
+}
+
+/* El tooltip cuando se muestra */
+
+.cssToolTip:hover span,
+.cssToolTip2:hover span {
+	display: inline;
+}
+
+/* modal */
+
+.modal:target {
+	display: table;
+	position: absolute;
+}
+
+.modal {
+	width: 70vw;
+	height: auto;
+	display: none;
+	left: auto;
+	top: auto;
+	overflow: auto;
+	z-index: 9999999999;
+	padding: 1em;
+	background-color: rgba(243, 243, 243, 0.95);
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* engadir animation */
+	-webkit-animation-name: anima;
+	/* Chrome, Safari, Opera */
+	-webkit-animation-duration: 1s;
+	/* Chrome, Safari, Opera */
+	animation-name: anima;
+	animation-duration: 1s;
+}
+
+div.bloque-texto {
+	width: 48%;
+	display: inline-grid;
+	border-left: 1px solid #ccc;
+}
+
+div.bloque-texto p {
+	width: 99%;
+	margin: 0.5em;
+	padding: 0.8em;
+	display: ;
+}
+
+.modal h2 {
+	margin: 0 auto;
+	width: auto;
+	text-align: right;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.modal img {
+	margin: 0em 2em 0em 0em;
+	width: auto;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: none;
+}
+
+.modal img:hover {
+	margin: 0em 2em 0em 0em;
+	width: auto;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: none;
+}
+
+.modal h3 {
+	margin: 0 auto;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.modal h3 > span {
+	margin: 0 auto;
+	font-size: 1em;
+	color: #959508;
+	font-weight: normal;
+}
+
+.modal p {
+	margin: 0 auto;
+}
+
+.container-modal {
+	width: 80vw;
+	padding: 0.7em;
+}
+
+
+/* cerrar el modal */
+
+.closebtn {
+	text-decoration: none;
+	float: right;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #007a53;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}

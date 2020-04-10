@@ -1,0 +1,94 @@
+
+#contenedor-galeria {
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+
+/*		AQU? COMIENZA EL DESARROLLO DEL MEN	*/
+
+/*	Desarrollo de la galeria de imagenes	*/
+
+li .min {
+	width: 75px;
+	height: 64px;
+	padding: 0px;
+	border: 1px solid #ccc;
+}
+
+#contenedor-imagenes {
+	margin: 0 auto;
+	width: 40vw;
+	border: 1px solid green;
+}
+
+.fotos {
+
+	list-style-type: none;
+
+	/* Eliminacion de vieta en IE6 */
+	padding: 0px;
+	/* Eliminacion de vieta en IE6 */
+	border: 1px solid red;
+}
+
+.fotos li img {
+	border-radius: 0.5em;
+	/*Estandar*/
+	-webkit-border-radius: 0.5rem;
+	/*Safari y Chrome*/
+	-moz-border-radius: 0.5em;
+	/*Firefox*/
+	-o-border-radius: 0.5em;
+	/*Opera*/
+	-ms-border-radius: 0.5em;
+	/*IE 8*/
+}
+
+.fotos li .max {
+	visibility: hidden;
+	position: absolute;
+
+	top: 20vh;
+	left: 25vw;
+	margin: 1em;
+}
+
+.fotos li:hover .max {
+	visibility: visible;
+width:400px;
+	-moz-box-shadow: 3px 5px 8px #888888;
+	/* Firefox 3.5 - 3.6 */
+	-webkit-box-shadow: 3px 5px 8px #888888;
+	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	box-shadow: 3px 5px 8px #888888;
+	/* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	border-radius: 0.5em;
+	/*Estandar*/
+	-webkit-border-radius: 0.5rem;
+	/*Safari y Chrome*/
+	-moz-border-radius: 0.5em;
+	/*Firefox*/
+	-o-border-radius: 0.5em;
+	/*Opera*/
+	-ms-border-radius: 0.5em;
+	/*IE 8*/
+}
+
+.fotos li p {
+	visibility: hidden;
+	width: 40vw;
+	position: absolute;
+	top: 60vh;
+	/* Provoca la separacion del borde superior */
+	left: 22vw;
+	/* Separa la imagen grande de la pequea */
+}
+
+.fotos li:hover p {
+	visibility: visible;
+	display: block;
+	font-size: 1em;
+}

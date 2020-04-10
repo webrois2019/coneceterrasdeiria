@@ -1,0 +1,31 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/*
+Marrón Hex Color Code	#a2582c
+MarrónRGB Color Code	rgb(255, 204, 0)
+
+Gris  color: rgba(210, 215, 217, 0.75);
+Gray Hex Color Code #808080
+
+verde Rois Hex Color Code #007a53 007a53
+verde Rois  RGB Color Code	rgb(0,122, 83)
+
+verde Rois Hex Color Code #007a53
+verde Rois RGB Color Code rgb(0,122, 83)
+
+Ocre Hex Color Code #ffcc00
+Ocre RGB Color Code	rgb(255, 204, 0)
+*/
+
+.flotante {
+	display: scroll;
+	position: fixed;
+	top: 90%;
+	right: 1.7%;
+}
+
+.flotante i {
+	color: #007a53;
+}

@@ -1,0 +1,160 @@
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block
+}
+
+progress {
+	vertical-align: baseline
+}
+
+img {
+	border-style: none
+}
+
+button {
+	font: inherit;
+	margin: 0
+}
+
+button {
+	overflow: visible
+}
+
+button {
+	text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+	-webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+	border-style: none;
+	padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+	outline: 1px dotted ButtonText
+}
+
+
+/* End extract */
+
+.w3-button {
+	border: none;
+	display: inline-block;
+	padding: inherit;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	font-size: 2em;
+	color: #999;
+	background-color: #ccc;
+	opacity: 0.5;
+}
+
+.w3-button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.w3-button:hover {
+	color: #000;
+	background-color: #ccc;
+	padding: inherit;
+	opacity: 1;
+}
+
+.w3-button:disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.w3-disabled *,
+:disabled * {
+	pointer-events: none
+}
+
+.w3-display-container {
+	position: relative;
+	top: 10%;
+}
+
+
+.w3-content,
+.w3-auto {
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+.w3-content {
+	max-width: 80%;
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-grow: 1;
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-basis: auto;
+	justify-content: center;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.w3-content img {
+	transition: 0.9s ease;
+	transform-origin: 40% 40%;
+	transform-style: preserve-3d;
+	position: relative;
+	top: 15%;
+}
+
+.w3-content img:hover {
+	transform: scale(1.8, 1.8);
+}
+
+.w3-content button:hover {}
+
+.w3-display-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(-0%, -50%)
+}
+
+.w3-display-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%)
+}
