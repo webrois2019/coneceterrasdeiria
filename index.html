@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Rois</title>
+	<title>Coñece Terras de Iria</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta lang="gl">
@@ -16,6 +16,161 @@
 	<link rel="stylesheet" type="text/css" href="css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
 	<link rel="icon" href="favicon.ico">
+	<!-- SCRIPT CONTROL DE COOKIES -->
+	<script type="text/javascript">
+		function controlcookies() {
+			// si variable no existe se crea (al clicar en Aceptar)
+			localStorage.controlcookie = (localStorage.controlcookie || 0);
+
+			localStorage.controlcookie++; // incrementamos cuenta de la cookie
+			cookie1.style.display = 'none'; // Esconde la política de cookies
+		}
+
+	</script>
+
+	<style type="text/css">
+		/* CSS para  animación e localización dos DIV de cookies */
+
+		@keyframes desaparecer {
+			0% {
+				bottom: 0px;
+			}
+			80% {
+				bottom: 0px;
+			}
+			100% {
+				bottom: -50px;
+			}
+		}
+
+		@-webkit-keyframes desaparecer
+		/* Safari and Chrome */
+
+			{
+			0% {
+				bottom: 0px;
+			}
+			80% {
+				bottom: 0px;
+			}
+			100% {
+				bottom: -50px;
+			}
+		}
+
+		@keyframes aparecer {
+			0% {
+				bottom: -38px;
+			}
+			10% {
+				bottom: 0px;
+			}
+			90% {
+				bottom: 0px;
+			}
+			100% {
+				bottom: -38px;
+			}
+		}
+
+		@-webkit-keyframes aparecer
+		/* Safari and Chrome */
+
+			{
+			0% {
+				bottom: -38px;
+			}
+			10% {
+				bottom: 0px;
+			}
+			90% {
+				bottom: 0px;
+			}
+			100% {
+				bottom: -38px;
+			}
+		}
+
+		#cookiesms1:target {
+			display: none;
+		}
+
+		.cookiesms {
+			width: 100%;
+			height: 2em;
+			margin: 0 auto;
+			padding-left: 1%;
+			padding-top: 5px;
+			font-size: 1.2em;
+			clear: both;
+			font-weight: strong;
+			color: #333;
+			bottom: 0px;
+			position: fixed;
+			left: 0px;
+			background-color: #FFF;
+			opacity: 0.8;
+			filter: alpha(opacity=70);
+			/* For IE8 and earlier */
+			transition: bottom 1s;
+			-webkit-transition: bottom 1s;
+			/* Safari */
+			-webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+			-moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+			box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+			z-index: 999999999;
+		}
+
+		.cookiesms:hover {
+			bottom: 0px;
+		}
+
+		.cookies2 {
+			background-color: #FFF;
+			display: inline;
+			opacity: 0.9;
+			filter: alpha(opacity=95);
+			position: absolute;
+			left: 1%;
+			top: -30px;
+			font-size: 15px;
+			height: 30px;
+			padding-left: 25px;
+			padding-right: 25px;
+			-webkit-border-top-right-radius: 15px;
+			-webkit-border-top-left-radius: 15px;
+			-moz-border-radius-topright: 15px;
+			-moz-border-radius-topleft: 15px;
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+			-webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+			-moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+			box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+		}
+
+		/* Fin del CSS para cookies */
+
+		/* boton aceptar para cookies */
+
+		.cookiesms button {
+			padding: 0.2em;
+			border-radius: 0.3em;
+			box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+		}
+
+		.cookiesms button:hover {
+			border-radius: 0.3em;
+			-webkit-transform: scale(1.5) translate(-5%, 0px);
+			transform: scale(1.5) translate(-5%, 0px);
+			overflow: visible;
+			z-index: 9999999;
+			background-color: #fff;
+			box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+		}
+
+		/* fin boton aceptar para cookies */
+
+	</style>
 </head>
 
 <body>
@@ -38,6 +193,23 @@
 				</nav>
 			</div>
 		</article>
+		<!--Código HTML de la política de cookies -->
+
+		<!--La URL incluida es la parte que se ha de modificar -->
+
+		<div class="cookiesms" id="cookie1">
+			Esta web utiliza cookies, podes ver <a href="tu-url-donde-explicas-la-politica-de-cookies">a política de cookies, aquí</a> Si continuas navegando estarás aceptandoa
+			<button onclick="controlcookies()">Aceptar</button>
+			<div class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies &plus; </div>
+		</div>
+		<script type="text/javascript">
+			if (localStorage.controlcookie > 0) {
+				document.getElementById('cookie1').style.bottom = '-40px';
+			}
+
+		</script>
+
+		<!-- Fin del código de cookies --->
 		<footer>
 			<div class="copyright">
 				<p><img src="imagenes/logos.jpg" alt="Logotipos Obradoiros de Emprego" /></p>
